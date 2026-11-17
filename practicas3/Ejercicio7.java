@@ -1,32 +1,23 @@
-
 import javax.swing.JOptionPane;
 
-public class Ejercicio6 {
+public class Ejercicio7 {
 
     public static void main(String[] args) {
 
-        double numero;
-        double suma = 0;
-        double media;
+        long suma = 0;
+        double producto = 1;
 
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 20; i <= 400; i = i + 2) {
 
-            numero = Double.parseDouble(
-                JOptionPane.showInputDialog(
-                    null,
-                    "Ingresa el numero " + i + " de 100"
-                )
-            );
+            suma = suma + i;
 
-            suma = suma + numero;
+            producto = producto * i;
         }
-
-        media = suma / 100;
 
         JOptionPane.showMessageDialog(
             null,
-            "La suma es: " + suma
-            + "\nLa media de los 100 numeros es: " + media
+            "La suma de los numeros pares es: " + suma
+            + "\nEl producto de los numeros pares es: " + producto
         );
 
     }
