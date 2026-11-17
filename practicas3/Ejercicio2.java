@@ -1,7 +1,7 @@
 
 import javax.swing.JOptionPane;
 
-public class Calificaciones {
+public class Ejercicio2 { 
 
     public static void main(String[] args) {
 
