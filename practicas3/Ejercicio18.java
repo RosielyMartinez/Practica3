@@ -1,0 +1,44 @@
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio18 {
+
+    public static void main(String[] args) {
+
+        double numero;
+        double maximo;
+        double minimo;
+
+        numero = Double.parseDouble(
+            JOptionPane.showInputDialog(
+                "Ingresa el numero 1 de 100:"
+            )
+        );
+
+        maximo = numero;
+        minimo = numero;
+
+        for (int i = 2; i <= 100; i++) {
+
+            numero = Double.parseDouble(
+                JOptionPane.showInputDialog(
+                    "Ingresa el numero " + i + " de 100:"
+                )
+            );
+
+            if (numero > maximo) {
+                maximo = numero;
+            }
+
+            if (numero < minimo) {
+                minimo = numero;
+            }
+        }
+
+        JOptionPane.showMessageDialog(
+            null,
+            "El valor maximo es: " + maximo
+            + "\nEl valor minimo es: " + minimo
+        );
+    }
+}
