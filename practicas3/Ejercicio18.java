@@ -11,18 +11,18 @@ public class Ejercicio18 {
 
         numero = Double.parseDouble(
             JOptionPane.showInputDialog(
-                "Ingresa el numero 1 de 100:"
+                "Ingresa el numero 1:"
             )
         );
 
         maximo = numero;
         minimo = numero;
 
-        for (int i = 2; i <= 100; i++) {
+        for (int n = 2; n <= 100; n++) {
 
             numero = Double.parseDouble(
                 JOptionPane.showInputDialog(
-                    "Ingresa el numero " + i + " de 100:"
+                    "Ingresa el numero " + n + ":"
                 )
             );
 
