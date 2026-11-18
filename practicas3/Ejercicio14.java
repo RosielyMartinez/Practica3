@@ -1,36 +1,38 @@
 
 import javax.swing.JOptionPane;
 
-public class Ejercicio13 {
+public class Ejercicio14 {
+
     public static void main(String[] args) {
 
         int N;
-        int producto = 1;
+        int suma = 0;
 
-        N = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el valor de N:"));
+        N = Integer.parseInt(
+            JOptionPane.showInputDialog(
+                "Ingresa el numero N:"
+            )
+        );
 
-        for (int i = 1; i <= N; i++) {
-            producto = producto * i;
+        if (N < 8) {
+
+            JOptionPane.showMessageDialog(
+                null,
+                "El numero debe ser mayor o igual a 8."
+            );
+
+        } else {
+
+            for (int i = 8; i <= N; i++) {
+
+                suma = suma + i;
+
+            }
+
+            JOptionPane.showMessageDialog(
+                null,
+                "La suma desde 8 hasta " + N + " es: " + suma
+            );
         }
-
-        JOptionPane.showMessageDialog(null, "El producto es: " + producto);
-    }
-}
-
-import javax.swing.JOptionPane;
-
-public class Ejercicio13 {
-    public static void main(String[] args) {
-
-        int N;
-        int producto = 1;
-
-        N = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el valor de N:"));
-
-        for (int i = 1; i <= N; i++) {
-            producto = producto * i;
-        }
-
-        JOptionPane.showMessageDialog(null, "El producto es: " + producto);
     }
 }
